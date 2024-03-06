@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Satya kala Micro Project 3</title>
+    <link rel="icon" type="image/x-icon" href="sk icon.jpg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro%3A700%2C800"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Segoe+UI%3A700"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter%3A800"/>
+    <link rel="stylesheet" href="MicroProject3.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <p id="calc">Calculator</p>
+        <div class="display">
+          <input type="text" name="display" id="display" placeholder="0">
+        </div>
+        <div class="buttons">
+            <div class="rows" id="row1">
+                <input type="button" value="7" id="seven" onclick="display.value += '7' ">
+                <input type="button" value="8" id="eight" onclick="display.value += '8' ">
+                <input type="button" value="9" id="nine" onclick="display.value += '9' ">
+                <input type="button" value="DEL" id="del" onclick="display.value = display.value.toString().slice(0,-1)">
+            </div>
+            <div class="row2">
+                <input type="button" value="4" id="four" onclick="display.value += '4' ">
+                <input type="button" value="5" id="five" onclick="display.value += '5' ">
+                <input type="button" value="6" id="six" onclick="display.value += '6' ">
+                <input type="button" value="+" id="plus" onclick="display.value += '+' ">
+            </div>
+            <div class="row3">
+                <input type="button" value="1" id="one" onclick="display.value += '1' ">
+                <input type="button" value="2" id="two" onclick="display.value += '2' ">
+                <input type="button" value="3" id="three" onclick="display.value += '3' ">
+                <input type="button" value="-" id="minus" onclick="display.value += '-' ">
+            </div>
+            <div class="row4">
+                <input type="button" value="." id="dot" onclick="display.value += '.' ">
+                <input type="button" value="0" id="zero" onclick="display.value += '0' ">
+                <input type="button" value="/" id="div" onclick="display.value += '/' ">
+                <input type="button" value="*" id="mul" onclick="display.value += '*' ">
+            </div>
+            <div class="row5">
+                <input type="button" value="RESET" id="reset" onclick="display.value = ''">
+                <input type="button" value="=" id="equals" onclick="display.value = eval(display.value)" class="equal">
+            </div>
+        </div>
+        
+</body>
+</html>
